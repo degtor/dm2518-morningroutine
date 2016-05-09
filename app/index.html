@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Notice the ng-app Angular directive. This tells Angular where the application starts and also
+which module to associate the app with. In app.js we create the "dinnerPlanner" module. -->
+<html lang="en" ng-app="app">
+
+<head>
+  <!-- Meta & mobile data -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dinner planner</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="initial-scale=1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-startup-image" href="http://img.icoin.cn/_files/201109/c454901bf11449e0b1ef3973920ec0c4.jpg">
+  <link href="http://image.unijobs.se/logo/graphics/apple-touch-icon-114x114.png" sizes="114x114" rel="apple-touch-icon-precomposed">
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Stuff -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/angular-route/angular-route.js"></script>
+  <script src="/bower_components/angular-resource/angular-resource.js"></script>
+  <!-- The application JavaScript code -->
+  <script src="app.js"></script>
+  <script src="partials/dayView/dayCtrl.js"></script>
+  <script src="partials/statsView/statsCtrl.js"></script>
+  <script src="partials/loginView/loginCtrl.js"></script>
+  <script src="partials/navbar/navCtrl.js"></script>
+  <script src="backend.js"></script>
+</head>
+
+<body>
+  <div ng-view></div>
+</body>
+
+</html>

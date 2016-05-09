@@ -1,0 +1,9 @@
+<div id="day" ng-app="morningRoutine">
+  <ng-include src="'partials/navbar/navbar.html'"></ng-include>
+  <div ng-controller="dayCtrl">
+    <h1>Hello! I'm day!</h1>
+    <a id="yesterday" class="btn" data-ng-click="changeDay($event)" href="#day/{{user}}/{{thisDate}}">Yesterday</a>
+    <a id="today" class="btn" data-ng-click="changeDay($event)" href="#day/{{user}}/{{thisDate}}">Today</a>
+    <a id="tomorrow" class="btn" data-ng-click="changeDay($event)" href="#day/{{user}}/{{thisDate}}">Tomorrow</a>
+  </div>
+</div>
